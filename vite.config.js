@@ -11,6 +11,7 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
+    base: '/stp-9500/',
     build: {
       sourcemap: true,
       rollupOptions: {
@@ -21,6 +22,7 @@ export default defineConfig(({ command }) => {
               return 'vendor';
             }
           },
+
           entryFileNames: chunkInfo => {
             if (chunkInfo.name === 'commonHelpers') {
               return 'commonHelpers.js';
