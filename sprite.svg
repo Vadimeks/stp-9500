@@ -6,6 +6,20 @@
 <path fill="#4285f4" style="fill: var(--color3, #4285f4)" d="M14.456 15.385l-13.868 13.473c-0.079-0.291-0.118-0.589-0.118-0.902v-24.431c0-0.313 0.039-0.619 0.118-0.91l13.868 12.77z"></path>
 <path fill="#34a853" style="fill: var(--color4, #34a853)" d="M0.589 2.615c0.417-1.506 1.826-2.615 3.502-2.615 0.685 0 1.322 0.191 1.873 0.505l15.072 8.495-6.942 6.737-13.506-13.121z"></path>
 </symbol>
-
+<symbol id="icon-star" viewBox="0 0 32 32">
+<path fill="#ff32c2" style="fill: var(--color1, #ff32c2)" d="M16 1.371l3.592 11.056h11.625l-9.405 6.833 3.592 11.056-9.405-6.833-9.405 6.833 3.592-11.056-9.405-6.833h11.625l3.592-11.056z"></path>
+</symbol>
+<symbol id="icon-triangle" viewBox="0 0 32 32">
+<path fill="#ff32c2" style="fill: var(--color1, #ff32c2)" d="M16 2.5l15.155 26.25h-30.311l15.155-26.25z"></path>
+</symbol>
+<symbol id="icon-ellipse" viewBox="0 0 32 32">
+<path fill="#ff32c2" style="fill: var(--color1, #ff32c2)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
+<symbol id="icon-rectangle" viewBox="0 0 32 32">
+<path fill="#ff32c2" style="fill: var(--color1, #ff32c2)" d="M0 0h32v32h-32v-32z"></path>
+</symbol>
+<symbol id="icon-green-ball" viewBox="0 0 32 32">
+<path fill="#34a853" style="fill: var(--color2, #34a853)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
+</symbol>
   </defs>
 </svg>
