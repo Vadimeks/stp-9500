@@ -9,7 +9,13 @@
         <div class="join-our-community-cards">
             <ul class="join-our-community-cards-list">
                 <li class="join-our-community-cards-item">
-                    <img src="/img/join/pl-one-mob@2x.webp" alt="Player-card">
+                    <picture class="image-set-players">
+                        <source srcset="/img/join/player-one-desc.webp 1x, /img/join/player-one@2x-desc.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="/img/join/pl-one-mob.webp 1x, /img/join/pl-one-mob@2x.webp 2x"
+                            media="(max-width: 1199px)" type="image/webp">
+                        <img src="/img/join/pl-one-mob.webp" alt="Player-card 1">
+                    </picture>
                     <ul class="player-info-list">
                         <li class="player-info-item">
                             <p class="player-info-item-text">Just reached a new high score!</p>
@@ -17,16 +23,21 @@
                         <li class="player-info-item-hash">#RushStormGame</li>
                         <li class="player-info-item-other">
                             <svg class="player-info-item-icon" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-green-ball"></use>
+                                <use href="./sprite.svg#icon-green-ball"></use>
                             </svg>
                             <p class="player-info-item-other-text">Player1</p>
                         </li>
                     </ul>
-
-
                 </li>
+
                 <li class="join-our-community-cards-item">
-                    <img src="/img/join/pl-two-mob@2x.webp" alt="Player-card">
+                    <picture class="image-set-players">
+                        <source srcset="/img/join/player-two-desc.webp 1x, /img/join/player-two@2x-desc.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="/img/join/pl-two-mob.webp 1x, /img/join/pl-two-mob@2x.webp 2x"
+                            media="(max-width: 1199px)" type="image/webp">
+                        <img src="/img/join/pl-two-mob.webp" alt="Player-card 2">
+                    </picture>
                     <ul class="player-info-list">
                         <li class="player-info-item">
                             <p class="player-info-item-text">Loving the Jewel Quest mode!</p>
@@ -34,7 +45,7 @@
                         <li class="player-info-item-hash">#FadingStormChallenge</li>
                         <li class="player-info-item-other">
                             <svg class="player-info-item-icon" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-green-ball"></use>
+                                <use href="./sprite.svg#icon-green-ball"></use>
                             </svg>
                             <p class="player-info-item-other-text">Player2</p>
                         </li>
@@ -43,15 +54,35 @@
             </ul>
         </div>
         <ul class="join-our-community-social-list">
-            <li class="join-our-community-social-item"></li>
-            <li class="join-our-community-social-item"></li>
-            <li class="join-our-community-social-item"></li>
-            <li class="join-our-community-social-item"></li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="24" height="24">
+                    <use href="./sprite.svg#icon-ellipse"></use>
+                </svg>
+                <p class="social-text">Instagram</p>
+            </li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="24" height="24">
+                    <use href="./sprite.svg#icon-rectangle"></use>
+                </svg>
+                <p class="social-text">Facebook</p>
+            </li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="32" height="32">
+                    <use href="./sprite.svg#icon-triangle"></use>
+                </svg>
+                <p class="social-text">Tik-Tok</p>
+            </li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="32" height="32">
+                    <use href="./sprite.svg#icon-star"></use>
+                </svg>
+                <p class="social-text">YouTube</p>
+            </li>
         </ul>
     </div>
 
 
 
 
-    </div>
+
 </section>
