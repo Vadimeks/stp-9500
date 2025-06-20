@@ -1,0 +1,49 @@
+.watch-gameplay {
+    padding: 12px 0 16px 0;
+}
+
+.watch-gameplay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 320px;
+}
+
+.watch-gameplay-title {
+    height: 260px;
+    font-family: Fredoka One;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #1F2A62;
+}
+
+.watch-gameplay-link-ytb {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+
+}
+
+.icon-google-play {
+    border-radius: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+    .watch-gameplay-title {
+        height: 104px;
+    }
+
+    .watch-gameplay-container {
+
+        max-width: 1200px;
+    }
+}
