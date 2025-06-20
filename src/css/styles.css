@@ -12,6 +12,8 @@
 
 /* Sections style */
 @import url('./header.css');
+
+@import url('./designed-for.css');
 @import url('./join-our-community.css');
 @import url('./technical-details.css');
 @import url('./watch-gameplay.css');
