@@ -1,0 +1,41 @@
+/* Styles for the section title */
+.technical-details-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 32px;
+    color: #333;
+}
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.details-parameter {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #555;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.details-value {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #222;
+    text-align: right;
+}
+
+.details-item:last-child {
+    border-bottom: none;
+}
