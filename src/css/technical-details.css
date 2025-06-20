@@ -4,19 +4,9 @@
     padding: 12px 0;
 }
 
-.container {}
-
-.technical-details-container {}
-
-.technical-details-title {}
-
-.details-list {}
-
-.details-item {}
-
-.details-parameter {}
-
-.details-value {}
+.technical-details-container {
+    max-width: 320px;
+}
 
 .technical-details-title {
     text-align: center;
@@ -57,4 +47,10 @@
 
 .details-item:last-child {
     border-bottom: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .technical-details-container {
+        max-width: 1200px;
+    }
 }
