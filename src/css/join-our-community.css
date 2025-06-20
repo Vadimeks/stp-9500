@@ -1,0 +1,181 @@
+.section-join-our-community {
+    padding: 12px 0;
+}
+
+.join-our-community-container {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-our-community-descr {
+    width: 263px;
+}
+
+.join-our-community-title {
+    font-family: Fredoka One;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #1F2A62;
+    margin-bottom: 24px;
+}
+
+.join-our-community-text {
+    display: none;
+}
+
+.join-our-community-cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 35px;
+    margin-bottom: 16px;
+}
+
+.join-our-community-cards-item {
+    border-radius: 6px;
+    border: 1px solid #0000001A;
+    display: none;
+}
+
+.join-our-community-cards-item:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-our-community-cards-item img {
+    border-radius: 6px;
+}
+
+.player-info-list {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.player-info-item-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.player-info-item-hash {
+    background: #FBBC04;
+    padding: 2px 4px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+.player-info-item-other {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.player-info-item-icon {
+    fill: #34A853;
+}
+
+.player-info-item-other-text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.join-our-community-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12.5px 118px;
+}
+
+.join-our-community-social-item {
+    width: 85px;
+    height: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-icon {
+    fill: #FF32C2;
+}
+
+.social-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-join-our-community {
+        padding: 40px 0;
+    }
+
+    .join-our-community-container {
+        max-width: 1200px;
+    }
+
+    .join-our-community-descr {
+        width: 520px;
+    }
+
+    .join-our-community-title {
+        line-height: 48px;
+    }
+
+    .join-our-community-text {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0;
+        text-align: center;
+        color: #000000;
+    }
+
+    .join-our-community-cards-list {
+        flex-direction: row;
+        gap: 40px;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .join-our-community-cards-item {
+        padding: 10px 13.5px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .join-our-community-cards-item img {
+        border-radius: 15px;
+    }
+
+    .join-our-community-social-list {
+        width: 716px;
+        justify-content: space-between;
+    }
+}
