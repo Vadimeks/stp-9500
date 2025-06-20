@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@500&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/stp-9500/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/stp-9500/assets/styles-BHb9bAGW.css">
+  <link rel="stylesheet" crossorigin href="/stp-9500/assets/styles-DCAanhD3.css">
 </head>
 
 <body>
@@ -60,7 +60,13 @@
         <div class="join-our-community-cards">
             <ul class="join-our-community-cards-list">
                 <li class="join-our-community-cards-item">
-                    <img src="/stp-9500/img/join/pl-one-mob@2x.webp" alt="Player-card">
+                    <picture class="image-set-players">
+                        <source srcset="/stp-9500/img/join/player-one-desc.webp 1x, /stp-9500/img/join/player-one@2x-desc.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="/stp-9500/img/join/pl-one-mob.webp 1x, /stp-9500/img/join/pl-one-mob@2x.webp 2x"
+                            media="(max-width: 1199px)" type="image/webp">
+                        <img src="/stp-9500/img/join/pl-one-mob.webp" alt="Player-card 1">
+                    </picture>
                     <ul class="player-info-list">
                         <li class="player-info-item">
                             <p class="player-info-item-text">Just reached a new high score!</p>
@@ -68,16 +74,21 @@
                         <li class="player-info-item-hash">#RushStormGame</li>
                         <li class="player-info-item-other">
                             <svg class="player-info-item-icon" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-green-ball"></use>
+                                <use href="./sprite.svg#icon-green-ball"></use>
                             </svg>
                             <p class="player-info-item-other-text">Player1</p>
                         </li>
                     </ul>
-
-
                 </li>
+
                 <li class="join-our-community-cards-item">
-                    <img src="/stp-9500/img/join/pl-two-mob@2x.webp" alt="Player-card">
+                    <picture class="image-set-players">
+                        <source srcset="/stp-9500/img/join/player-two-desc.webp 1x, /stp-9500/img/join/player-two@2x-desc.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="/stp-9500/img/join/pl-two-mob.webp 1x, /stp-9500/img/join/pl-two-mob@2x.webp 2x"
+                            media="(max-width: 1199px)" type="image/webp">
+                        <img src="/stp-9500/img/join/pl-two-mob.webp" alt="Player-card 2">
+                    </picture>
                     <ul class="player-info-list">
                         <li class="player-info-item">
                             <p class="player-info-item-text">Loving the Jewel Quest mode!</p>
@@ -85,7 +96,7 @@
                         <li class="player-info-item-hash">#FadingStormChallenge</li>
                         <li class="player-info-item-other">
                             <svg class="player-info-item-icon" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-green-ball"></use>
+                                <use href="./sprite.svg#icon-green-ball"></use>
                             </svg>
                             <p class="player-info-item-other-text">Player2</p>
                         </li>
@@ -94,17 +105,37 @@
             </ul>
         </div>
         <ul class="join-our-community-social-list">
-            <li class="join-our-community-social-item"></li>
-            <li class="join-our-community-social-item"></li>
-            <li class="join-our-community-social-item"></li>
-            <li class="join-our-community-social-item"></li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="24" height="24">
+                    <use href="./sprite.svg#icon-ellipse"></use>
+                </svg>
+                <p class="social-text">Instagram</p>
+            </li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="24" height="24">
+                    <use href="./sprite.svg#icon-rectangle"></use>
+                </svg>
+                <p class="social-text">Facebook</p>
+            </li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="32" height="32">
+                    <use href="./sprite.svg#icon-triangle"></use>
+                </svg>
+                <p class="social-text">Tik-Tok</p>
+            </li>
+            <li class="join-our-community-social-item">
+                <svg class="social-icon" width="32" height="32">
+                    <use href="./sprite.svg#icon-star"></use>
+                </svg>
+                <p class="social-text">YouTube</p>
+            </li>
         </ul>
     </div>
 
 
 
 
-    </div>
+
 </section>
     <section class="technical-details">
   <div class="container technical-details-container">
