@@ -12,5 +12,7 @@
 
 /* Sections style */
 @import url('./header.css');
+
 @import url('./technical-details.css');
+@import url('./watch-gameplay.css');
 @import url('./footer.css');
