@@ -1,0 +1,118 @@
+.game-modes-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #1F2A62;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.game-modes-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.game-modes-item-img {
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+
+.game-modes-item-button {
+  border: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 10px 8px;
+  width: 77px;
+  height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.game-modes-items-wrapper {
+  margin: 0;
+  padding: 12px;
+}
+
+.game-modes-item-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.game-modes-item-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.game-modes-items-wrapper-desktop {
+  display: none;
+}
+
+.rst-tile {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.3;
+  color: #1F2A62;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .game-modes-title {
+    line-height: 1.3;
+  }
+
+  .game-modes-list {
+    display: flex;
+    gap: 78px;
+  }
+
+  .game-modes-item {
+    width: calc((100% - 78px ) / 2);
+  }
+
+  .game-modes-source,
+  .game-modes-item-img {
+    width: 521px;
+    height: 340px;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .game-modes-item-button {
+    display: none;
+  }
+
+  .game-modes-items-wrapper {
+    display: none;
+  }
+
+  .game-modes-item-title {
+    font-weight: 600;
+  }
+
+  .game-modes-items-wrapper-desktop {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    display: block;
+    padding: 12px;
+    height: 109px;
+  }
+}
