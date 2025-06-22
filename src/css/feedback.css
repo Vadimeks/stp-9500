@@ -114,13 +114,8 @@
     }
 
     .feedback-container {
-        max-width: 1200px;
-        padding: 0 26px;
-    }
-
-    .feedback-content-wrapper {
         max-width: 930px;
-        margin: 0 auto;
+        padding: 0 26px;
     }
 
     .feedback-swipe-block {
