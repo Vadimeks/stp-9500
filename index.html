@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@500&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/stp-9500/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/stp-9500/assets/styles-DIqBBTZT.css">
+  <link rel="stylesheet" crossorigin href="/stp-9500/assets/styles-rBvA9eX7.css">
 </head>
 
 <body>
@@ -67,25 +67,31 @@
   <main>
     <section class="hero-section">
   <div class="container hero-container">
-    <h1 class="game-name">Fading Storm Puzzle: Rush Game</h1>
-    <p class="game-tags">Smash, Match & Blast in the Ultimate Puzzle Rush</p>
-    <img src="./img/google-play.webp" alt="dowload link" width="180" height="52">
+    <div class="hero-wrapper">
+      <h1 class="game-name">Fading Storm Puzzle: Rush Game</h1>
+      <p class="game-tags">Smash, Match & Blast in the Ultimate Puzzle Rush</p>
+      <img src="./img/google-play.webp" alt="dowload link" width="180" height="52">
+    </div>
 
-    <h2 class="game-description-title">About the Game</h2>
-    <p class="game-description"><span class="game-description-subtitle">Classic Blocks, Modern Rush</span>
-    Welcome to a vibrant fusion of block-matching nostalgia and fast-paced puzzle challenges. Whether you're a seasoned block master or a casual gamer, Fading Storm delivers a compelling blend of strategy, stress relief, and color-matching satisfaction.</p>
+    <img class="hero-image-1" src="./img/hero/hero1.webp" alt="gameplay" srcset="./img/hero/hero1.webp 1x, ./img/hero/hero1@2x.webp 2x" />
 
-    <div class="gameplay-info-wrapper">
-      <img class="game-img"
-      srcset="./img/hero/gameplay.webp 1x, ./img/hero/gameplay@2x.webp 2x"
-      src="./img/hero/gameplay.webp"
-      alt="preview" />
-      <div class="info-wrapper">
-        <h3 class="gameplay-description-title">Description</h3>
-        <p class="gameplay-description">Join the adventure with Fading Storm Puzzle: Rush Game! Smash, match, and blast your way to victory.</p>
+    <img class="hero-image-2" src="./img/hero/hero2.webp" alt="gameplay" srcset="./img/hero/hero2.webp 1x, ./img/hero/hero2@2x.webp 2x" />
 
-        <div class="hero-watermark"></div>
-        <p class="hero-watermark-description">Official Game Description</p>
+    <div class="game-wrapper">
+      <h2 class="game-description-title">About the Game</h2>
+      <p class="game-description"><span class="game-description-subtitle">Classic Blocks, Modern Rush</span> Welcome to a vibrant fusion of block-matching nostalgia and fast-paced puzzle challenges. Whether you're a seasoned block master or a casual gamer, Fading Storm delivers a compelling blend of strategy, stress relief, and color-matching satisfaction.</p>
+      
+      <div class="gameplay-info-wrapper">
+        <img class="game-img" srcset="./img/hero/gameplay.webp 1x, ./img/hero/gameplay@2x.webp 2x"
+          src="./img/hero/gameplay.webp" alt="preview" />
+        <div class="info-wrapper">
+          <h3 class="gameplay-description-title">Description</h3>
+          <p class="gameplay-description">Join the adventure with Fading Storm Puzzle: Rush Game! Smash, match, and blast your
+            way to victory.</p>
+      
+          <div class="hero-mark"></div>
+          <p class="hero-watermark-description">Official Game Description</p>
+        </div>
       </div>
     </div>
   </div>
@@ -295,25 +301,39 @@
 
     <h2 class="rst-title">Why You'll Love It</h2>
     <ul class="rst-list">
-      <li>
-        <img src="" alt="">
-        <button>Brain Booster</button>
-        <p>Enhances focus, memory, and logic</p>
+      <li class="rst-vector">
+        <button class="rst-list-svg-button" type="button">
+          <svg class="rst-list-svg" width="35" height="35">
+            <use href="./sprite.svg#icon-left-arrow"></use>
+          </svg>
+        </button>
       </li>
-      <li>
-        <img src="" alt="">
-        <button>Colorful Design</button>
-        <p>Vivid, satisfying explosions with every combo</p>
+      <li class="rst-list-item">
+        <img class="rst-list-image" srcset="./img/reason-to-play/brain-boost.webp 1x, ./img/reason-to-play/brain-boost@2x.webp 2x" src="./img/reason-to-play/brain-boost.webp" alt="brain booster" />
+        <button class="rst-list-button">Brain Booster</button>
+        <p class="rst-list-subtitle">Enhances focus, memory, and logic</p>
       </li>
-      <li>
-        <img src="" alt="">
-        <button>Addictive Gameplay</button>
-        <p>Easy to learn, hard to master</p>
+      <li class="rst-list-item" data-rst-nonactive>
+        <img class="rst-list-image" srcset="./img/reason-to-play/colorful-design.webp 1x, ./img/reason-to-play/colorful-design@2x.webp 2x" src="./img/reason-to-play/colorful-design.webp" alt="colorful design" />
+        <button class="rst-list-button">Colorful Design</button>
+        <p class="rst-list-subtitle">Vivid, satisfying explosions with every combo</p>
       </li>
-      <li>
-        <img src="" alt="">
-        <button>Stress Reliever</button>
-        <p>Calm visuals and relaxing mechanics</p>
+      <li class="rst-list-item" data-rst-active>
+        <img class="rst-list-image" srcset="./img/reason-to-play/addictive.webp 1x, ./img/reason-to-play/addictive@2x.webp 2x" src="./img/reason-to-play/addictive.webp" alt="addictive gameplay" />
+        <button class="rst-list-button">Addictive Gameplay</button>
+        <p class="rst-list-subtitle">Easy to learn, hard to master</p>
+      </li>
+      <li class="rst-list-item">
+        <img class="rst-list-image" srcset="./img/reason-to-play/stress-reveal.webp 1x, ./img/reason-to-play/stress-reveal@2x.webp 2x" src="./img/reason-to-play/stress-reveal.webp" alt="stress reliever" />
+        <button class="rst-list-button">Stress Reliever</button>
+        <p class="rst-list-subtitle">Calm visuals and relaxing mechanics</p>
+      </li>
+      <li class="rst-vector">
+        <button class="rst-list-svg-button" type="button">
+          <svg class="rst-list-svg" width="35" height="35">
+            <use href="./sprite.svg#icon-rigth-arrow"></use>
+          </svg>
+        </button>
       </li>
     </ul>
   </div>
