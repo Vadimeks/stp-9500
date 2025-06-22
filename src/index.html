@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.webp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fading Storm Puzzle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@500&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <load src="./partials/footer.html" />
+<body>
+  <load src="./partials/header.html" />
 
-    <script type="module" src="./main.js"></script>
-  </body>
+  <main>
+    <load src="./partials/hero.html" />
+    <load src="./partials/features.html" />
+    <load src="./partials/how-to-play.html" />
+    <load src="./partials/game-modes.html" />
+
+    <load src="./partials/join-our-community.html" />
+    <load src="./partials/technical-details.html" />
+    <load src="./partials/watch-gameplay.html" />
+  </main>
+
+  <load src="./partials/footer.html" />
+
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>

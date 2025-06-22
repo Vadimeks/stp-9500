@@ -1,0 +1,152 @@
+.features-section {
+  margin-bottom: 24px;
+}
+
+.features-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.33;
+  color: #1F2A62;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.features-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.feature-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: calc((100% - 16px) / 2);
+  padding: 5px 5px;
+}
+
+.feature-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #167691;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.feature-image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 39px;
+  height: 29px;
+}
+
+.feature-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+}
+
+.feature-svg-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.feature-svg-list-item {
+  width: calc((100% - 16px) / 2);
+}
+
+.feature-svg-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  width: 24px;
+  height: 24px;
+}
+
+.feature-svg-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+.features-section {
+  margin-bottom: 80px;
+}
+
+  .features-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .features-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  .features-list {
+    gap: 36px;
+    margin-bottom: 32px;
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  .feature-item {
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    width: calc((100% - 72px) / 3);
+    padding: 9px 23px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-image {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 181px;
+    height: 181px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+  }
+
+  .feature-svg-list {
+    row-gap: 52px;
+    column-gap: 189px;
+  }
+
+  .feature-svg-list-item {
+    width: calc((100% - 567px) / 4);
+  }
+
+  .feature-svg-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
