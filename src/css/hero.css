@@ -1,0 +1,95 @@
+.game-name {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #1F2A62;
+  line-height: 1.33;
+  margin-bottom: 16px;
+}
+
+.game-tags {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.game-description-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #1F2A62;
+  line-height: 1.33;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.game-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000000;
+}
+
+.game-description-subtitle {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gameplay-info-wrapper {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 44px;
+  margin-top: 32px;
+}
+
+.game-img {
+  width: 100px;
+  height: 100px;
+}
+
+.gameplay-description-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.gameplay-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.hero-watermark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFEE26;
+  border-radius: 10px;
+  box-shadow: -8px 0px 20.3px 0px rgba(246, 177, 195, 0.9),1px 1px 4px 0px rgba(0, 0, 0, 0.2) inset;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.hero-watermark-description {
+  display: inline-block;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  vertical-align: middle;
+  overflow: hidden;
+}

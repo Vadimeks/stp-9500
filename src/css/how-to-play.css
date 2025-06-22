@@ -1,0 +1,55 @@
+.how-to-play-section {
+  margin-bottom: 24px;
+}
+
+.htp-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #1F2A62;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.htp-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.htp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.htp-list-image {
+  width: 288px;
+  height: 280px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .how-to-play-section {
+    margin-bottom: 128px;
+  }
+  
+  .htp-list {
+    flex-direction: row;
+    gap: 68px;
+  }
+
+  .htp-list-item {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset, -6px 0 15px rgba(246, 177, 195, 0.9) inset;
+  }
+
+  .htp-list-image {
+    width: 327px;
+    height: 319px;
+  }
+}

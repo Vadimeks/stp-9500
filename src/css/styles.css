@@ -13,6 +13,11 @@
 /* Sections style */
 @import url('./header.css');
 
+@import url('./hero.css');
+@import url('./features.css');
+@import url('./how-to-play.css');
+@import url('./game-modes.css');
+
 @import url('./technical-details.css');
 @import url('./watch-gameplay.css');
 @import url('./footer.css');
