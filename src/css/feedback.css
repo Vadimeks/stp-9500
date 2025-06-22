@@ -32,17 +32,61 @@
 }
 
 .feedback-swipe-block {
-    padding: 27px 14px;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+}
+
+.feedback-button {
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.feedback-button-next {
+    right: 0;
+    padding: 4px 0 4px 4px;
+}
+
+.feedback-button-prev {
+    left: 0;
+    padding: 4px 4px 4px 0;
+}
+
+.feedback-button-next .feedback-icon {
+    transform: rotate(-90deg);
+}
+
+.feedback-button-prev .feedback-icon {
+    transform: rotate(90deg);
+}
+
+.feedback-icon {
+    fill: #000000;
+
 }
 
 .feedback-list {
     display: flex;
+    padding: 14px 27px;
 }
 
 .feedback-item {
     width: 100%;
+    margin: 0 auto;
     flex-shrink: 0;
     display: none;
+    padding: 9px 5px;
+    background-color: #FBBC04;
+    border-radius: 6px;
 }
 
 .feedback-item:first-child {
@@ -54,6 +98,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+    margin-bottom: 16px;
 }
 
 .feedback-user-photo {
@@ -68,19 +113,55 @@
 
 @media screen and (min-width: 1200px) {
     .feedback-section {
-        padding: 40px 0;
+        padding: 40px 135px;
     }
 
     .feedback-container {
         max-width: 1200px;
+        padding: 0 26px;
+    }
+
+    .feedback-swipe-block {
+        padding-bottom: 31px;
+        min-height: auto;
     }
 
     .feedback-item {
         display: block;
+        padding: 16px;
     }
 
     .feedback-list {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        gap: 16px;
+    }
+
+    .feedback-button {
+        bottom: 0;
+        top: auto;
+        transform: translateX(-50%);
+        padding: 4px;
+    }
+
+    .feedback-button-next {
+        bottom: 0;
+        left: calc(50% - 24px);
+        transform: translateX(-50%);
+    }
+
+    .feedback-button-prev {
+        bottom: 0;
+        left: calc(50%);
+
+    }
+
+    .feedback-button-prev .feedback-icon {
+        transform: rotate(180deg);
+    }
+
+    .feedback-button-next .feedback-icon {
+        transform: rotate(0);
     }
 }
