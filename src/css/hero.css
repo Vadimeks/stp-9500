@@ -16,6 +16,11 @@
   margin-bottom: 16px;
 }
 
+.hero-image-1,
+.hero-image-2 {
+  display: none;
+}
+
 .game-description-title {
   font-family: 'Fredoka One', sans-serif;
   font-weight: 400;
@@ -72,7 +77,7 @@
   margin-bottom: 8px;
 }
 
-.hero-watermark {
+.hero-mark {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -92,4 +97,71 @@
   line-height: 1.43;
   vertical-align: middle;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    position: relative;
+    height: 1132px;
+  }
+
+  .hero-wrapper {
+    position: relative;
+    width: 520px;
+    top: 120px;
+    left: 70px;
+  }
+
+  .game-name {
+    font-size: 48px;
+    line-height: 1;
+    color: rgba(19, 29, 32, 0.9);
+  }
+
+  .game-tags {
+    color: #FFFFFF;
+  }
+
+  .hero-image-1,
+  .hero-image-2 {
+    display: inline-block;
+    position: absolute;
+  }
+
+  .hero-image-1 {
+    top: 6px;
+    right: 20px;
+    width: 426px;
+  }
+
+  .hero-image-2 {
+    bottom: 0;
+    left: 30px;
+  }
+
+  .game-wrapper {
+    position: absolute;
+    right: 8px;
+    bottom: 102px;
+    width: 540px;
+  }
+
+  .game-description-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .game-description  {
+    margin-bottom: 16px;
+  }
+
+  .gameplay-info-wrapper { 
+    border: 2px solid #FDEDED;
+    box-shadow: none;
+  }
+
+  .hero-mark {
+    background-color: #FDEDED;
+  }
 }
