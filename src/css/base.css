@@ -35,8 +35,6 @@ body {
 
 main {
   background: linear-gradient(to bottom, #27CFFE 0%, #FBDD04 100%);
-  background-attachment: fixed;
-
   flex-grow: 1;
 }
 
