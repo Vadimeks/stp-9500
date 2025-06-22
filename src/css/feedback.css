@@ -107,9 +107,6 @@
     border-radius: 50%;
 }
 
-/* .feedback-user-name {}
-
-.feedback-article {} */
 
 @media screen and (min-width: 1200px) {
     .feedback-section {
@@ -119,6 +116,11 @@
     .feedback-container {
         max-width: 1200px;
         padding: 0 26px;
+    }
+
+    .feedback-content-wrapper {
+        max-width: 930px;
+        margin: 0 auto;
     }
 
     .feedback-swipe-block {
@@ -136,6 +138,7 @@
         flex-direction: column;
         padding: 0;
         gap: 16px;
+
     }
 
     .feedback-button {
