@@ -8,6 +8,10 @@
   margin-bottom: 16px;
 }
 
+.game-modes-list {
+  margin-bottom: 48px;
+}
+
 .game-modes-subtitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -64,7 +68,7 @@
   display: none;
 }
 
-.rst-tile {
+.rst-title {
   font-family: 'Fredoka One', sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -72,6 +76,88 @@
   color: #1F2A62;
   text-align: center;
   margin-bottom: 8px;
+}
+
+.rst-vector {
+  display: none;
+}
+
+.rst-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rst-list-item {
+  background-color: #FFFFFF;
+  width: 72px;
+  padding: 2px 4px;
+  box-shadow: 1.5px 3.75px 3px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.rst-list-image {
+  width: 68px;
+  height: 55px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.rst-list-button {
+  display: block;
+  border: none;
+  background-color: #FBBC04;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 0.66;
+  border-radius: 4px;
+  width: 66px;
+  height: 13px;  
+  margin: 0 auto;
+  margin-bottom: 11px;
+}
+
+.rst-list-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: center;
+  width: 62px;
+}
+
+.rst-list-item[data-rst-nonactive] {
+  display: none;
+}
+
+.rst-list-item[data-rst-active] {
+  width: 124px;
+  height: 193px;
+  padding: 8px 5px;
+}
+
+.rst-list-item[data-rst-active] .rst-list-image {
+  width: 114px;
+  height: 108px;
+}
+
+.rst-list-item[data-rst-active] .rst-list-button {
+  font-size: 10.5px;
+  line-height: 0.66;
+  width: 120px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.rst-list-item[data-rst-active] .rst-list-subtitle {
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 2;
+  width: 114px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -82,6 +168,7 @@
   .game-modes-list {
     display: flex;
     gap: 78px;
+    margin-bottom: 80px;
   }
 
   .game-modes-item {
@@ -114,5 +201,88 @@
     display: block;
     padding: 12px;
     height: 109px;
+  }
+
+  .rst-title {
+    margin-bottom: 16px;
+  }
+
+  .rst-list {
+    gap: 11px;
+    align-items: start;
+  }
+
+  .rst-list-item {
+    border: 1px  solid #FBBC04;
+    box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    width: 260px;
+    height: 391px;
+    border-radius: 15px;
+    padding: 10px 8px;
+  }
+
+  .rst-list-image {
+    border-radius: 15px;
+    width: 244px;
+    height: 248px;
+  }
+
+  .rst-list-button {
+    width: 244px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 15px;
+    margin-bottom: 8px;
+  }
+
+  .rst-list-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .rst-list-item[data-rst-active] {
+    width: 486px;
+    height: 446px;
+  }
+
+  .rst-list-item[data-rst-active] .rst-list-image {
+    width: 470px;
+    height: 248px;
+    margin-bottom: 16px;
+  }
+
+  .rst-list-item[data-rst-active] .rst-list-button {
+    font-size: 24px;
+    line-height: 1.5;
+    width: 300px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+
+  .rst-list-item[data-rst-active] .rst-list-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%; 
+  }
+
+  .rst-vector {
+    display: block;
+  }
+
+  .rst-list-svg-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .rst-list-svg {
+    fill: #0E0D0D;
+  }
+
+  .rst-list>li:first-child,
+  .rst-list>li:last-child {
+    align-self: center;
   }
 }
