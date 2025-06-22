@@ -81,6 +81,8 @@
   margin-bottom: 18px;
   width: 24px;
   height: 24px;
+  stroke: #000000;
+  fill: transparent;
 }
 
 .feature-svg-title {
