@@ -1,5 +1,12 @@
 .mobile-only-header {
     display: block;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    height: 50px;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 .privacy-policy-section {
@@ -11,7 +18,7 @@
 }
 
 .privacy-header {
-    text-align: left;
+    text-align: center;
     font-family: Poppins;
     font-weight: 500;
     font-size: 40px;
@@ -156,7 +163,4 @@ p.privacy-paragraph {
         height: 24px;
     }
 
-    .privacy-header {
-        text-align: center;
-    }
 }
