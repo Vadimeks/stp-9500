@@ -1,8 +1,10 @@
-.terms-policy-section {
+.privacy-policy-section {
     padding: 30px 0;
 }
 
-.terms-link {
+/* .privacy-container {} */
+
+.privacy-link {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
@@ -22,7 +24,7 @@
     height: 24px;
 }
 
-.terms-header {
+.privacy-header {
     text-align: center;
     font-family: Poppins;
     font-weight: 500;
@@ -31,7 +33,11 @@
     letter-spacing: 0;
 }
 
-.terms-update-header {
+/* .privacy-descr {
+    
+} */
+
+.privacy-update-header {
     font-family: Poppins;
     font-weight: 600;
     font-size: 20px;
@@ -39,7 +45,7 @@
     letter-spacing: 0;
 }
 
-.terms-paragraph {
+.privacy-paragraph {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
@@ -47,14 +53,14 @@
     letter-spacing: 0;
 }
 
-.terms-list {
+.privacy-list {
     padding: 0;
     margin: 0;
     position: relative;
     list-style-position: inside;
 }
 
-.terms-item::marker {
+.privacy-item::marker {
     font-family: Poppins;
     font-weight: 600;
     font-size: 20px;
@@ -62,12 +68,12 @@
     letter-spacing: 0;
 }
 
-.terms-item-header::before {
+.privacy-item-header::before {
     display: inline-block;
     width: 16px;
 }
 
-.terms-item-header {
+.privacy-item-header {
     font-family: Poppins;
     font-weight: 600;
     font-size: 20px;
@@ -76,7 +82,7 @@
     display: inline;
 }
 
-.terms-item-text {
+.privacy-item-text {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
@@ -85,12 +91,12 @@
     display: block;
 }
 
-.terms-user-obligations-list {
+.privacy-how-use-list {
     position: relative;
     padding-left: 24px;
 }
 
-.terms-user-obligations-list-item::before {
+.privacy-how-use-list-item::before {
     content: "•";
     color: inherit;
     font-weight: bold;
@@ -99,7 +105,7 @@
     margin-left: -18px;
 }
 
-.terms-user-obligations-list-item {
+.privacy-how-use-list-item {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
@@ -107,12 +113,12 @@
     letter-spacing: 0;
 }
 
-.terms-external-links-list {
+.privacy-third-party-list {
     position: relative;
     padding-left: 24px;
 }
 
-.terms-external-links-item::before {
+.privacy-third-party-item::before {
     content: "•";
     color: inherit;
     font-weight: bold;
@@ -121,6 +127,6 @@
     margin-left: -18px;
 }
 
-.terms-external-links-link {
+.privacy-third-party-link {
     text-decoration: underline;
 }
