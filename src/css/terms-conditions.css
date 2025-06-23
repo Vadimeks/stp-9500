@@ -1,5 +1,5 @@
-.terms-policy-section {
-    padding: 30px 0;
+.terms-conditions-section {
+    padding: 12px 0;
 }
 
 .terms-link {
@@ -17,11 +17,6 @@
     margin-bottom: 24px;
 }
 
-.chevron-prev-icon {
-    width: 12px;
-    height: 24px;
-}
-
 .terms-header {
     text-align: center;
     font-family: Poppins;
@@ -33,7 +28,7 @@
 
 .terms-update-header {
     font-family: Poppins;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 0;
@@ -57,7 +52,7 @@
 .terms-item::marker {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 36px;
     letter-spacing: 0;
 }
@@ -70,7 +65,7 @@
 .terms-item-header {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 36px;
     letter-spacing: 0;
     display: inline;
@@ -123,4 +118,28 @@
 
 .terms-external-links-link {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+    .terms-conditions-section {
+        padding: 30px 0;
+    }
+
+    .terms-link {
+        display: block;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+
 }
