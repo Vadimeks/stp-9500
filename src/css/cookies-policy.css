@@ -56,6 +56,8 @@
 .cookies-list {
     padding: 0;
     margin: 0;
+    position: relative;
+    list-style-position: inside;
 }
 
 .cookies-item::marker {
@@ -66,12 +68,18 @@
     letter-spacing: 0;
 }
 
+.cookies-item-header::before {
+    display: inline-block;
+    width: 16px;
+}
+
 .cookies-item-header {
     font-family: Poppins;
     font-weight: 600;
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 0;
+    display: inline;
 }
 
 .cookies-item-text {
@@ -80,21 +88,89 @@
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0;
+    display: block;
 }
 
 .cookies-how-use-list {
-    list-style-type: disc;
-    padding-left: 20px;
+    position: relative;
+    padding-left: 24px;
 }
 
-.cookies-how-use-list-item {}
+.cookies-how-use-list-item::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
 
-.cookies-types-list {}
+.cookies-how-use-list-item {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
 
-.cookies-types-list-item {}
+.cookies-types-list {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
 
-.cookies-types-text {}
+.cookies-types-list {
+    position: relative;
+    padding-left: 24px;
+}
 
-.cookies-managing-list {}
+.cookies-types-header::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
 
-.cookies-managing-item {}
+.cookies-types-header {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: inline;
+}
+
+.cookies-types-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: block;
+    padding-left: 20px;
+    text-indent: -40px;
+}
+
+.cookies-managing-list {
+    position: relative;
+    padding-left: 24px;
+}
+
+.cookies-managing-item::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
+
+/* .cookies-managing-item {} */
+
+.cookies-managing-link {
+    text-decoration: underline;
+}
