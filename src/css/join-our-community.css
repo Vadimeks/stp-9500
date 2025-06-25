@@ -1,4 +1,5 @@
 @import 'swiper/css/bundle';
+@import './swiper-custom.css';
 
 .section-join-our-community {
     padding: 12px 0;
@@ -36,7 +37,6 @@
 .join-our-community-cards {
     position: relative;
     overflow: hidden;
-    padding: 0 35px;
     width: 100%;
 }
 
@@ -44,53 +44,6 @@
     flex-direction: row;
     display: flex;
     margin-bottom: 16px;
-}
-
-.join-our-community-cards.swiper.mySwiper.swiper-initialized {
-    padding: 0 35px;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-    content: none !important;
-}
-
-.join-button {
-    position: absolute;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    top: 50%;
-    z-index: 10;
-    color: transparent;
-}
-
-.join-button.swiper-button-next {
-    right: 0;
-    padding: 4px 0 4px 4px;
-}
-
-.join-button.swiper-button-prev {
-    left: 0;
-    padding: 4px 4px 4px 0;
-}
-
-.join-icon {
-    fill: #000000;
-}
-
-.swiper-button-next .join-icon {
-    transform: rotate(-90deg);
-}
-
-.swiper-button-prev .join-icon {
-    transform: rotate(90deg);
 }
 
 .join-our-community-cards-item {
@@ -101,10 +54,6 @@
     flex-shrink: 0;
     width: 100%;
     box-sizing: border-box;
-}
-
-.swiper-slide-active {
-    max-width: 288px;
 }
 
 .join-our-community-cards-item img {
@@ -159,6 +108,45 @@
     letter-spacing: 0;
     color: #000000;
 }
+
+.join-button {
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 10;
+    color: transparent;
+}
+
+.join-button.swiper-button-next {
+    right: 0;
+    padding: 4px 0 4px 4px;
+}
+
+.join-button.swiper-button-prev {
+    left: 0;
+    padding: 4px 4px 4px 0;
+}
+
+.join-icon {
+    fill: #000000;
+}
+
+.swiper-button-next .join-icon {
+    transform: rotate(-90deg);
+}
+
+.swiper-button-prev .join-icon {
+    transform: rotate(90deg);
+}
+
 
 .join-our-community-social-list {
     display: flex;
