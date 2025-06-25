@@ -1,7 +1,7 @@
 import { initializeSwiper } from './swiper-custom.js';
 
 const feedbackSwiper = initializeSwiper(
-  '.feedback-swipe-block',
+  'feedback-swiper',
   {
     breakpoints: {
       0: {
@@ -22,6 +22,6 @@ const feedbackSwiper = initializeSwiper(
       },
     },
   },
-  '.feedback-button.swiper-button-next',
-  '.feedback-button.swiper-button-prev'
+  'data-swiper-feedback-button-next',
+  'data-swiper-feedback-button-prev'
 );

@@ -104,11 +104,11 @@
 }
 
 .swiper-button-next .feedback-icon {
-    transform: rotate(-90deg);
+    transform: rotate(-180deg);
 }
 
 .swiper-button-prev .feedback-icon {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 
 .feedback-icon {
@@ -189,11 +189,11 @@
     }
 
     .feedback-button.swiper-button-prev .feedback-icon {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
 
     .feedback-button.swiper-button-next .feedback-icon {
-        transform: rotate(0);
+        transform: rotate(270deg);
     }
 
 }
