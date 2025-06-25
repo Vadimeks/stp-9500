@@ -148,7 +148,7 @@
 .rst-list-item[data-rst-active] .rst-list-button {
   font-size: 10.5px;
   line-height: 0.66;
-  width: 120px;
+  width: 114px;
   height: 24px;
   margin-bottom: 8px;
 }
@@ -161,6 +161,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .benifts-container {
+    scroll-margin-top: 58px;
+    overflow: clip;
+  }
+
   .game-modes-title {
     line-height: 1.3;
   }
@@ -175,16 +180,32 @@
     width: calc((100% - 78px ) / 2);
   }
 
+  .game-modes-top-wrapper {
+    position: relative;
+  }
+
   .game-modes-source,
   .game-modes-item-img {
     width: 521px;
     height: 340px;
     margin-bottom: 0;
     border-radius: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
   }
 
   .game-modes-item-button {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67px;
+    height: 24px;
+    border-radius: 6px 0 6px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+    padding: 4px 8px;
   }
 
   .game-modes-items-wrapper {

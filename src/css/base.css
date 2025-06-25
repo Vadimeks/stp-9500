@@ -20,7 +20,11 @@
 
 html {
   height: 100%;
+
+  scroll-behavior: smooth;
+
   background: linear-gradient(to bottom, #27CFFE 0%, #FBDD04 100%);
+
 }
 
 body {
@@ -32,6 +36,10 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+body[data-menu='open'] {
+  overflow: hidden;
 }
 
 main {
