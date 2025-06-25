@@ -31,66 +31,36 @@
     text-align: center;
 }
 
-.feedback-swipe-block {
+.swiper-inner-wrap {
     position: relative;
+}
+
+.feedback-swipe-block {
+
     width: 100%;
     min-height: auto;
-}
-
-.feedback-button {
-    position: absolute;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    top: 50%;
-}
-
-.feedback-button-next {
-    right: 0;
-    padding: 4px 0 4px 4px;
-}
-
-.feedback-button-prev {
-    left: 0;
-    padding: 4px 4px 4px 0;
-}
-
-.feedback-button-next .feedback-icon {
-    transform: rotate(-90deg);
-}
-
-.feedback-button-prev .feedback-icon {
-    transform: rotate(90deg);
-}
-
-.feedback-icon {
-    fill: #000000;
-
+    overflow: hidden;
+    padding: 0px 27px;
 }
 
 .feedback-list {
     display: flex;
-    padding: 14px 27px;
+    flex-direction: row;
+
 }
 
 .feedback-item {
+    border-radius: 6px;
+    border: 1px solid #0000001A;
     width: 100%;
-    margin: 0 auto;
+    max-width: 233px;
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
-    display: none;
     padding: 9px 5px;
     background-color: #FBBC04;
-    border-radius: 6px;
-}
-
-.feedback-item:first-child {
-    display: block;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .feedback-user-info {
@@ -107,59 +77,123 @@
     border-radius: 50%;
 }
 
+.feedback-button {
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 10;
+    color: transparent;
+}
+
+.feedback-button.swiper-button-next {
+    right: 0;
+    padding: 4px 0 4px 4px;
+}
+
+.feedback-button.swiper-button-prev {
+    left: 0;
+    padding: 4px 4px 4px 0;
+}
+
+.swiper-button-next .feedback-icon {
+    transform: rotate(-90deg);
+}
+
+.swiper-button-prev .feedback-icon {
+    transform: rotate(90deg);
+}
+
+.feedback-icon {
+    fill: #000000;
+
+}
 
 @media screen and (min-width: 1200px) {
     .feedback-section {
-        padding: 40px 135px;
+        padding: 40px 0;
+        margin: 0 auto;
     }
 
     .feedback-container {
-        max-width: 930px;
-        padding: 0 26px;
+        max-width: 1200px;
+        padding: 0 161px;
     }
 
-    .feedback-swipe-block {
-        padding-bottom: 31px;
-        min-height: auto;
+    .swiper-inner-wrap {
+        padding: 31px 0 !important;
+        height: 673px;
+        position: relative;
     }
 
-    .feedback-item {
-        display: block;
-        padding: 16px;
+    .feedback-swipe-block.swiper.mySwiper.swiper-initialized {
+        width: 878px;
+        height: 611px;
+        margin: 0 auto;
+
+        overflow: hidden;
     }
 
-    .feedback-list {
+    .feedback-list.swiper-wrapper {
         display: flex;
         flex-direction: column;
-        padding: 0;
         gap: 16px;
-
     }
 
-    .feedback-button {
-        bottom: 0;
+    .feedback-text-block {
+        margin-bottom: 0;
+    }
+
+    .feedback-article {
+        width: 100%;
+    }
+
+    p.feedback-text {
+        margin-bottom: 16px;
+    }
+
+    .feedback-item.swiper-slide,
+    .feedback-item.swiper-slide.swiper-slide-active {
+        display: block;
+        padding: 16px;
+        width: 100%;
+        max-height: 193px !important;
+        max-width: none;
+        box-sizing: border-box;
+        margin: 0 !important;
+    }
+
+
+    .feedback-button.swiper-button-next,
+    .feedback-button.swiper-button-prev {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .feedback-button.swiper-button-next {
+        bottom: -10px;
         top: auto;
-        transform: translateX(-50%);
-        padding: 4px;
+        right: auto;
     }
 
-    .feedback-button-next {
-        bottom: 0;
-        left: calc(50% - 30px);
-        transform: translateX(-50%);
+    .feedback-button.swiper-button-prev {
+        top: 10px;
+        bottom: auto;
     }
 
-    .feedback-button-prev {
-        bottom: 0;
-        left: calc(50% + 6px);
-
-    }
-
-    .feedback-button-prev .feedback-icon {
+    .feedback-button.swiper-button-prev .feedback-icon {
         transform: rotate(180deg);
     }
 
-    .feedback-button-next .feedback-icon {
+    .feedback-button.swiper-button-next .feedback-icon {
         transform: rotate(0);
     }
+
 }
