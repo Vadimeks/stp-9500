@@ -113,8 +113,10 @@
 
 .feedback-icon {
     fill: #000000;
-
+    width: 15px !important;
+    height: 23px !important;
 }
+
 
 @media screen and (min-width: 1200px) {
     .feedback-section {
