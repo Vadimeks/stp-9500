@@ -75,14 +75,29 @@
   width: calc((100% - 16px) / 2);
 }
 
-.feature-svg-icon {
+.feature-svg-icon-stroke,
+.feature-svg-icon-fill,
+.feature-svg-icon-stroke-web {
   display: block;
   margin: 0 auto;
   margin-bottom: 18px;
   width: 24px;
   height: 24px;
+}
+
+.feature-svg-icon-fill {
+  fill: #000000;
+}
+
+.feature-svg-icon-stroke {
   stroke: #000000;
+  stroke-width: 2px;
   fill: transparent;
+}
+
+.feature-svg-icon-stroke-web {
+  stroke: #000000;
+  stroke-width: 0.5px;
 }
 
 .feature-svg-title {
