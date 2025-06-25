@@ -160,12 +160,12 @@
   width: 114px;
 }
 
-@media screen and (min-width: 1200px) {
-  .benifts-container {
-    scroll-margin-top: 58px;
-    overflow: clip;
-  }
+.benifts-container {
+  scroll-margin-top: 54px;
+  overflow: clip;
+}
 
+@media screen and (min-width: 1200px) {
   .game-modes-title {
     line-height: 1.3;
   }
