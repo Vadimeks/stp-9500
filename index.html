@@ -14,41 +14,39 @@
   <script type="module" crossorigin src="/stp-9500/index.js"></script>
   <link rel="modulepreload" crossorigin href="/stp-9500/assets/vendor-C9lC3IcJ.js">
   <link rel="stylesheet" crossorigin href="/stp-9500/assets/vendor-BUrcyj0q.css">
-  <link rel="stylesheet" crossorigin href="/stp-9500/assets/styles-94YLfE7Q.css">
+  <link rel="stylesheet" crossorigin href="/stp-9500/assets/styles-CeMbkU3_.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
   <div class="header-container container">
     <nav class="navigation">
-      <a href="">
+      <a href="./index.html">
         <div class="logo">
           <img src="./logo.webp" alt="logo" width="30" height="30">
         </div>
       </a>
       <ul class="navigation-list">
         <li class="navigation-list-item">
-          <a href="">Home</a>
+          <a href="./index.html">Home</a>
         </li>
         <li class="navigation-list-item">
-          <a href="">Benefits</a>
+          <a href="#benefits">Benefits</a>
         </li>
         <li class="navigation-list-item">
-          <a href="">About this game</a>
+          <a href="#about">About this game</a>
         </li>
         <li class="navigation-list-item">
-          <a href="">How to play</a>
+          <a href="#how-to-play">How to play</a>
         </li>
         <li class="navigation-list-item">
-          <a href="">Key Features</a>
+          <a href="#features">Key Features</a>
         </li>
         <li class="navigation-list-item">
-          <a href="">
-            Reviews
-          </a>
+          <a href="#reviews">Reviews</a>
         </li>
         <li class="navigation-list-item">
-          <a href="">
+          <a href="#contacts">
             <button class="navigation-contact-btn">
               Contacts
             </button>
@@ -59,12 +57,44 @@
 
 
     <div class="mob-menu">
-      <svg class="feature-svg-icon" width="24" height="24">
-        <use href="./sprite.svg#icon-mob-menu"></use>
-      </svg>
+      <button class="mobile-menu-toggle-btn" data-action="toggle-burger">
+        <svg class="mob-menu-icon" width="24" height="24">
+          <use href="./sprite.svg#icon-mob-menu"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+  <div class="mobile-menu" data-mobile-menu data-state="closed">
+  <button class="mobile-menu-close-btn" data-action="close-menu" aria-label="close button">
+    <svg class="close-mobile-menu-icon" width="18" height="18">
+      <use href="./img/sprite.svg#icon-mobile-close"></use>
+    </svg>
+  </button>
+  <ul class="mobile-nav">
+    <li class="mobile-nav-item mobile-home-item">
+      <a href="./index.html" class="mob-nav-link" data-action="close-menu">Home</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="#benefits" class="mob-nav-link" data-action="close-menu">Benefist</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="#about" class="mob-nav-link" data-action="close-menu">About this game</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="#how-to-play" class="mob-nav-link" data-action="close-menu">How to play</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="#features" class="mob-nav-link" data-action="close-menu">Key Features</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="#reviews" class="mob-nav-link" data-action="close-menu">Reviews</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="#contacts" class="mob-nav-link" data-action="close-menu">Contacts</a>
+    </li>
+  </ul>
+</div>
 
   <main>
     <section class="hero-section">
@@ -72,14 +102,16 @@
     <div class="hero-wrapper">
       <h1 class="game-name">Fading Storm Puzzle: Rush Game</h1>
       <p class="game-tags">Smash, Match & Blast in the Ultimate Puzzle Rush</p>
-      <img src="./img/google-play.webp" alt="dowload link" width="180" height="52">
+      <a href="https://play.google.com/store/apps/details?id=com.chillgames.blast.blocks&hl=en&gl=us&pli=1" target="_blank">
+        <img src="./img/google-play.webp" alt="dowload link" width="180" height="52">
+      </a>
     </div>
 
     <img class="hero-image-1" src="./img/hero/hero1.webp" alt="gameplay" srcset="./img/hero/hero1.webp 1x, ./img/hero/hero1@2x.webp 2x" />
 
     <img class="hero-image-2" src="./img/hero/hero2.webp" alt="gameplay" srcset="./img/hero/hero2.webp 1x, ./img/hero/hero2@2x.webp 2x" />
 
-    <div class="game-wrapper">
+    <div class="game-wrapper" id="about">
       <h2 class="game-description-title">About the Game</h2>
       <p class="game-description"><span class="game-description-subtitle">Classic Blocks, Modern Rush</span> Welcome to a vibrant fusion of block-matching nostalgia and fast-paced puzzle challenges. Whether you're a seasoned block master or a casual gamer, Fading Storm delivers a compelling blend of strategy, stress relief, and color-matching satisfaction.</p>
       
@@ -98,7 +130,7 @@
     </div>
   </div>
 </section>
-    <section class="features-section">
+    <section class="features-section" id="features">
   <div class="container">
     <h2 class="features-title">Key Features</h2>
     <p class="features-subtitle">Why you'll love Fading Storm Puzzle: Rush Game</p>
@@ -175,49 +207,49 @@
 
     <ul class="feature-svg-list">
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-fill">
           <use href="./sprite.svg#icon-ic_baseline-electric-bolt"></use>
         </svg>
         <p class="feature-svg-title">Brain booster</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-stroke">
           <use href="./sprite.svg#icon-streamline-sharp_star-2-solid"></use>
         </svg>
         <p class="feature-svg-title">Colorful design</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-stroke">
           <use href="./sprite.svg#icon-lucide_smile"></use>
         </svg>
         <p class="feature-svg-title">Challenging levels</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-fill">
           <use href="./sprite.svg#icon-mdi_heart-outline"></use>
         </svg>
         <p class="feature-svg-title">Global ranks</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-stroke">
           <use href="./sprite.svg#icon-lucide_bolt"></use>
         </svg>
         <p class="feature-svg-title">Stress reliever</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-stroke-web" stroke-width="1px">
           <use href="./sprite.svg#icon-clarity_world-line"></use>
         </svg>
         <p class="feature-svg-title">Easy controls</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-fill">
           <use href="./sprite.svg#icon-ic_baseline-done"></use>
         </svg>
         <p class="feature-svg-title">Replay value</p>
       </li>
       <li class="feature-svg-list-item">
-        <svg class="feature-svg-icon">
+        <svg class="feature-svg-icon-fill">
           <use href="./sprite.svg#icon-ic_baseline-replay"></use>
         </svg>
         <p class="feature-svg-title">Replay highlights</p>
@@ -225,7 +257,7 @@
     </ul>
   </div>
 </section>
-    <section class="how-to-play-section">
+    <section class="how-to-play-section" id="how-to-play">
   <div class="container">
     <h2 class="htp-title">How to Play</h2>
     <p class="htp-subtitle">Quick Steps to Start Playing</p>
@@ -254,14 +286,18 @@
     <p class="game-modes-subtitle">Choose Your Way to Play</p>
     <ul class="game-modes-list">
       <li class="game-modes-item">
-        <picture>
-          <source class="game-modes-source" media="(min-width: 1200px)"
-            srcset="./img/game-modes/desktop/game-mod1-desktop.webp 1x, ./img/game-modes/desktop/game-mod1-desktop@2x.webp 2x" />
-          <img src="./img/game-modes/mobile/game-mod1-mob.webp"
-            srcset="./img/game-modes/mobile/game-mod1-mob.webp 1x, ./img/game-modes/mobile/game-mod1-mob@2x.webp 2x"
-            alt="Classic mode screenshot" class="game-modes-item-img" />
-        </picture>
-        <button class="game-modes-item-button">Try Mode</button>
+        <div class="game-modes-top-wrapper">
+          <picture>
+            <source class="game-modes-source" media="(min-width: 1200px)"
+              srcset="./img/game-modes/desktop/game-mod1-desktop.webp 1x, ./img/game-modes/desktop/game-mod1-desktop@2x.webp 2x" />
+            <img src="./img/game-modes/mobile/game-mod1-mob.webp"
+              srcset="./img/game-modes/mobile/game-mod1-mob.webp 1x, ./img/game-modes/mobile/game-mod1-mob@2x.webp 2x"
+              alt="Classic mode screenshot" class="game-modes-item-img" />
+          </picture>
+          <button class="game-modes-item-button">
+            <a href="">Try Mode</a>
+          </button>
+        </div>
         <div class="game-modes-items-wrapper">
           <h3 class="game-modes-item-title">Classic</h3>
           <p class="game-modes-item-subtitle">
@@ -276,6 +312,7 @@
         </div>
       </li>
       <li class="game-modes-item">
+       <div class="game-modes-top-wrapper">
         <picture>
           <source class="game-modes-source" media="(min-width: 1200px)"
             srcset="./img/game-modes/desktop/game-mod2-desktop.webp 1x, ./img/game-modes/desktop/game-mod2-desktop@2x.webp 2x" />
@@ -283,7 +320,10 @@
             srcset="./img/game-modes/mobile/game-mod2-mob.webp 1x, ./img/game-modes/mobile/game-mod2-mob@2x.webp 2x"
             alt="Rush Challenge mode screenshot" class="game-modes-item-img" />
         </picture>
-        <button class="game-modes-item-button">Try Mode</button>
+        <button class="game-modes-item-button">
+          <a href="">Try Mode</a>
+        </button>
+       </div>
         <div class="game-modes-items-wrapper">
           <h3 class="game-modes-item-title">Rush Challenge</h3>
           <p class="game-modes-item-subtitle">
@@ -301,43 +341,53 @@
     </ul>
     
 
-    <h2 class="rst-title">Why You'll Love It</h2>
-    <ul class="rst-list">
-      <li class="rst-vector">
-        <button class="rst-list-svg-button" type="button">
-          <svg class="rst-list-svg" width="35" height="35">
-            <use href="./sprite.svg#icon-left-arrow"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="rst-list-item">
-        <img class="rst-list-image" srcset="./img/reason-to-play/brain-boost.webp 1x, ./img/reason-to-play/brain-boost@2x.webp 2x" src="./img/reason-to-play/brain-boost.webp" alt="brain booster" />
-        <button class="rst-list-button">Brain Booster</button>
-        <p class="rst-list-subtitle">Enhances focus, memory, and logic</p>
-      </li>
-      <li class="rst-list-item" data-rst-nonactive>
-        <img class="rst-list-image" srcset="./img/reason-to-play/colorful-design.webp 1x, ./img/reason-to-play/colorful-design@2x.webp 2x" src="./img/reason-to-play/colorful-design.webp" alt="colorful design" />
-        <button class="rst-list-button">Colorful Design</button>
-        <p class="rst-list-subtitle">Vivid, satisfying explosions with every combo</p>
-      </li>
-      <li class="rst-list-item" data-rst-active>
-        <img class="rst-list-image" srcset="./img/reason-to-play/addictive.webp 1x, ./img/reason-to-play/addictive@2x.webp 2x" src="./img/reason-to-play/addictive.webp" alt="addictive gameplay" />
-        <button class="rst-list-button">Addictive Gameplay</button>
-        <p class="rst-list-subtitle">Easy to learn, hard to master</p>
-      </li>
-      <li class="rst-list-item">
-        <img class="rst-list-image" srcset="./img/reason-to-play/stress-reveal.webp 1x, ./img/reason-to-play/stress-reveal@2x.webp 2x" src="./img/reason-to-play/stress-reveal.webp" alt="stress reliever" />
-        <button class="rst-list-button">Stress Reliever</button>
-        <p class="rst-list-subtitle">Calm visuals and relaxing mechanics</p>
-      </li>
-      <li class="rst-vector">
-        <button class="rst-list-svg-button" type="button">
-          <svg class="rst-list-svg" width="35" height="35">
-            <use href="./sprite.svg#icon-rigth-arrow"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+    <div class="benifts-container" id="benefits">
+      <h2 class="rst-title">Why You'll Love It</h2>
+      <ul class="rst-list">
+        <li class="rst-vector">
+          <button class="rst-list-svg-button" type="button">
+            <svg class="rst-list-svg" width="35" height="35">
+              <use href="./sprite.svg#icon-left-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="rst-list-item">
+          <img class="rst-list-image"
+            srcset="./img/reason-to-play/brain-boost.webp 1x, ./img/reason-to-play/brain-boost@2x.webp 2x"
+            src="./img/reason-to-play/brain-boost.webp" alt="brain booster" />
+          <button class="rst-list-button">Brain Booster</button>
+          <p class="rst-list-subtitle">Enhances focus, memory, and logic</p>
+        </li>
+        <li class="rst-list-item" data-rst-nonactive>
+          <img class="rst-list-image"
+            srcset="./img/reason-to-play/colorful-design.webp 1x, ./img/reason-to-play/colorful-design@2x.webp 2x"
+            src="./img/reason-to-play/colorful-design.webp" alt="colorful design" />
+          <button class="rst-list-button">Colorful Design</button>
+          <p class="rst-list-subtitle">Vivid, satisfying explosions with every combo</p>
+        </li>
+        <li class="rst-list-item" data-rst-active>
+          <img class="rst-list-image"
+            srcset="./img/reason-to-play/addictive.webp 1x, ./img/reason-to-play/addictive@2x.webp 2x"
+            src="./img/reason-to-play/addictive.webp" alt="addictive gameplay" />
+          <button class="rst-list-button">Addictive Gameplay</button>
+          <p class="rst-list-subtitle">Easy to learn, hard to master</p>
+        </li>
+        <li class="rst-list-item">
+          <img class="rst-list-image"
+            srcset="./img/reason-to-play/stress-reveal.webp 1x, ./img/reason-to-play/stress-reveal@2x.webp 2x"
+            src="./img/reason-to-play/stress-reveal.webp" alt="stress reliever" />
+          <button class="rst-list-button">Stress Reliever</button>
+          <p class="rst-list-subtitle">Calm visuals and relaxing mechanics</p>
+        </li>
+        <li class="rst-vector">
+          <button class="rst-list-svg-button" type="button">
+            <svg class="rst-list-svg" width="35" height="35">
+              <use href="./sprite.svg#icon-rigth-arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
     <section class="feedback-section">
