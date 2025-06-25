@@ -116,7 +116,7 @@
     height: 24px;
     background: transparent;
     border: none;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
@@ -137,6 +137,9 @@
 
 .join-icon {
     fill: #000000;
+    width: 15px !important;
+    height: 23px !important;
+
 }
 
 .swiper-button-next .join-icon {
