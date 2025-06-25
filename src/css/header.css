@@ -24,6 +24,11 @@
   display: none;
 }
 
+.mobile-menu-toggle-btn {
+  border: none;
+  background-color: transparent;
+}
+
 @media screen and (min-width: 1200px) {
   .header {
     margin-top: 12px;

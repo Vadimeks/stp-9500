@@ -144,6 +144,8 @@
     right: 8px;
     bottom: 102px;
     width: 540px;
+    scroll-margin-top: 34px;
+    overflow: clip;
   }
 
   .game-description-title {
