@@ -1,0 +1,163 @@
+@import 'izitoast/dist/css/iziToast.min.css';
+
+.cookies-window {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.cookie-banner {
+    height: 100%;
+    color: #000;
+    padding: 24px 5px 42px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.cookie-banner-header {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+.cookie-banner-message {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #24292E;
+}
+
+.cookie-banner-buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 154px;
+}
+
+.cookie-banner-button {
+    font-family: Poppins, sans-serif;
+    padding: 9px 13px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 154px;
+    height: 38px;
+    text-transform: uppercase;
+}
+
+.cookie-banner-button-accept {
+    background-color: #000;
+    color: white;
+}
+
+.cookie-banner-button-accept:hover {
+    background-color: #d9d9d9;
+    color: #000;
+}
+
+.cookie-banner-button-decline {
+    background-color: #d9d9d9;
+    color: #000;
+}
+
+.cookie-banner-button-decline:hover {
+    background-color: #000;
+    color: white;
+}
+
+.cookie-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    max-width: 400px;
+    text-align: center;
+}
+
+.cookie-message p {
+    margin: 0;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .cookies-window {
+        height: auto;
+    }
+
+    .cookie-banner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 68px 40px 32px 40px;
+        gap: 24px;
+    }
+
+    .cookie-banner-header {
+        font-family: Poppins, sans-serif;
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .cookie-banner-message {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        color: #000000;
+    }
+
+
+    .cookie-banner-buttons {
+        flex-direction: row;
+        gap: 64px;
+        width: 100%;
+        max-width: 600px;
+
+    }
+
+    .cookie-banner-button {
+        font-family: Poppins, sans-serif;
+        padding: 21px 26.5px;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        width: 271px;
+        height: 66px;
+        text-transform: uppercase;
+    }
+
+}

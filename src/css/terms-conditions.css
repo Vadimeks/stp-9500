@@ -1,0 +1,145 @@
+.terms-conditions-section {
+    padding: 12px 0;
+}
+
+.terms-link {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.terms-header {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0;
+}
+
+.terms-update-header {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.terms-paragraph {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.terms-list {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style-position: inside;
+}
+
+.terms-item::marker {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.terms-item-header::before {
+    display: inline-block;
+    width: 16px;
+}
+
+.terms-item-header {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: inline;
+}
+
+.terms-item-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: block;
+}
+
+.terms-user-obligations-list {
+    position: relative;
+    padding-left: 24px;
+}
+
+.terms-user-obligations-list-item::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
+
+.terms-user-obligations-list-item {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.terms-external-links-list {
+    position: relative;
+    padding-left: 24px;
+}
+
+.terms-external-links-item::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
+
+.terms-external-links-link {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+    .terms-conditions-section {
+        padding: 30px 0;
+    }
+
+    .terms-link {
+        display: block;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+
+}

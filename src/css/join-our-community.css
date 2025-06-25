@@ -1,13 +1,18 @@
+@import 'swiper/css/bundle';
+@import './swiper-custom.css';
+
 .section-join-our-community {
     padding: 12px 0;
 }
 
 .join-our-community-container {
-    max-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .join-our-community-descr {
@@ -29,28 +34,31 @@
     display: none;
 }
 
+.join-our-community-cards {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
 .join-our-community-cards-list {
+    flex-direction: row;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 35px;
     margin-bottom: 16px;
 }
 
 .join-our-community-cards-item {
     border-radius: 6px;
     border: 1px solid #0000001A;
-    display: none;
-}
-
-.join-our-community-cards-item:first-child {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .join-our-community-cards-item img {
     border-radius: 6px;
+    animation: image-pulse 2s infinite alternate;
 }
 
 .player-info-list {
@@ -101,6 +109,45 @@
     color: #000000;
 }
 
+.join-button {
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 10;
+    color: transparent;
+}
+
+.join-button.swiper-button-next {
+    right: 0;
+    padding: 4px 0 4px 4px;
+}
+
+.join-button.swiper-button-prev {
+    left: 0;
+    padding: 4px 4px 4px 0;
+}
+
+.join-icon {
+    fill: #000000;
+}
+
+.swiper-button-next .join-icon {
+    transform: rotate(-90deg);
+}
+
+.swiper-button-prev .join-icon {
+    transform: rotate(90deg);
+}
+
+
 .join-our-community-social-list {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +176,41 @@
     color: #000000;
 }
 
+.join-our-community-social-item .social-icon {
+    animation: pulse 1s infinite alternate;
+    filter: drop-shadow(0 0 8px rgba(255, 50, 194, 0.5));
+    transition: filter 0.3s ease-out;
+}
+
+.join-our-community-social-item:hover {
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes image-pulse {
+    0% {
+        filter: brightness(1) contrast(1);
+        box-shadow: 0 0 0px rgba(255, 255, 0, 0.0);
+    }
+
+    100% {
+        filter: brightness(1.2) contrast(1.2);
+        box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .section-join-our-community {
         padding: 40px 0;
@@ -136,6 +218,9 @@
 
     .join-our-community-container {
         max-width: 1200px;
+        width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
     }
 
     .join-our-community-descr {
@@ -154,20 +239,41 @@
         letter-spacing: 0;
         text-align: center;
         color: #000000;
+        display: block;
+    }
+
+    .join-our-community-cards {
+        overflow: visible;
+        padding: 0;
+        width: 100%;
     }
 
     .join-our-community-cards-list {
         flex-direction: row;
-        gap: 40px;
+        display: flex;
+        gap: 152px;
         padding: 0;
         margin-bottom: 24px;
+        width: 100%;
+        justify-content: center;
     }
 
-    .join-our-community-cards-item {
+    .join-our-community-cards-item.swiper-slide {
         padding: 10px 13.5px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
+        width: 484px !important;
+        margin-right: 0px !important;
+        transform: none !important;
+        left: auto !important;
+        box-sizing: border-box;
+    }
+
+    .swiper-slide-active.join-our-community-cards-item {
+        max-width: none !important;
+        margin: unset !important;
     }
 
     .join-our-community-cards-item img {
@@ -175,7 +281,11 @@
     }
 
     .join-our-community-social-list {
-        width: 716px;
+        width: 1120px;
         justify-content: space-between;
+    }
+
+    .join-button {
+        display: none;
     }
 }

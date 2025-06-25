@@ -1,0 +1,176 @@
+.cookies-policy-section {
+    padding: 12px 0;
+}
+
+.cookies-link {
+    display: none;
+}
+
+.cookies-header {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0;
+}
+
+.cookies-update-header {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.cookies-paragraph {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.cookies-list {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style-position: inside;
+}
+
+.cookies-item::marker {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.cookies-item-header::before {
+    display: inline-block;
+    width: 16px;
+}
+
+.cookies-item-header {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: inline;
+}
+
+.cookies-item-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: block;
+}
+
+.cookies-how-use-list {
+    position: relative;
+    padding-left: 24px;
+}
+
+.cookies-how-use-list-item::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
+
+.cookies-how-use-list-item {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.cookies-types-list {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+
+.cookies-types-list {
+    position: relative;
+    padding-left: 24px;
+}
+
+.cookies-types-header::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
+
+.cookies-types-header {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: inline;
+}
+
+.cookies-types-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0;
+    display: block;
+    padding-left: 20px;
+    text-indent: -40px;
+}
+
+.cookies-managing-list {
+    position: relative;
+    padding-left: 24px;
+}
+
+.cookies-managing-item::before {
+    content: "•";
+    color: inherit;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -18px;
+}
+
+.cookies-managing-link {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+    .cookies-policy-section {
+        padding: 30px 0;
+    }
+
+    .cookies-link {
+        display: block;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+
+}
