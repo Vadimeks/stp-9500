@@ -140,11 +140,11 @@
 }
 
 .swiper-button-next .join-icon {
-    transform: rotate(-90deg);
+    transform: rotate(-180deg);
 }
 
 .swiper-button-prev .join-icon {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 
 
