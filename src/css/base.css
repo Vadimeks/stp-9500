@@ -81,3 +81,8 @@ strong {
 em {
   font-style: italic;
 }
+
+section {
+  scroll-margin-top: 54px;
+  overflow: clip;
+}
