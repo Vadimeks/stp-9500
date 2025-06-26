@@ -25,8 +25,9 @@
 
 .footer-links {
   width: 100%;
+
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   font-family: Poppins;
@@ -49,16 +50,6 @@
 .footer-links-item:focus {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
-
-/* .footer-contact {
-  font-family: Poppins;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: center;
-  color: #000000;
-} */
 
 .footer-name {
   font-family: Inter;

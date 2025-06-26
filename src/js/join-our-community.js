@@ -1,8 +1,8 @@
 import { initializeSwiper } from './swiper-custom.js';
 
 const joinCommunitySwiper = initializeSwiper(
-  '.join-our-community-cards',
+  'join-swiper',
   {},
-  '.join-button.swiper-button-next',
-  '.join-button.swiper-button-prev'
+  'data-swiper-join-button-next',
+  'data-swiper-join-button-prev'
 );

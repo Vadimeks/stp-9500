@@ -117,7 +117,7 @@
     height: 24px;
     background: transparent;
     border: none;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
@@ -138,14 +138,17 @@
 
 .join-icon {
     fill: #000000;
+    width: 15px !important;
+    height: 23px !important;
+
 }
 
 .swiper-button-next .join-icon {
-    transform: rotate(-90deg);
+    transform: rotate(-180deg);
 }
 
 .swiper-button-prev .join-icon {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 
 
@@ -286,7 +289,19 @@
         justify-content: space-between;
     }
 
-    .join-button {
-        display: none;
+    .join-button.swiper-button-next,
+    .join-button.swiper-button-prev {
+        content: none !important;
+    }
+
+    .join-button.swiper-button-next,
+    .join-button.swiper-button-prev {
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
     }
 }
