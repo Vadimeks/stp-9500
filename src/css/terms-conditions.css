@@ -3,6 +3,7 @@
 }
 
 .terms-link {
+    display: block;
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
@@ -17,14 +18,7 @@
     margin-bottom: 24px;
 }
 
-.terms-header {
-    text-align: center;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 52px;
-    letter-spacing: 0;
-}
+
 
 .terms-update-header {
     font-family: Poppins;
@@ -125,21 +119,7 @@
         padding: 30px 0;
     }
 
-    .terms-link {
-        display: block;
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25px;
-        letter-spacing: 0%;
-        text-decoration: underline;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 24px;
-    }
+
 
 
 }

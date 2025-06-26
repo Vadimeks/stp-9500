@@ -3,16 +3,19 @@
 }
 
 .cookies-link {
-    display: none;
-}
-
-.cookies-header {
-    text-align: center;
+    display: block;
     font-family: Poppins;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 52px;
-    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
 .cookies-update-header {
@@ -156,21 +159,7 @@
         padding: 30px 0;
     }
 
-    .cookies-link {
-        display: block;
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25px;
-        letter-spacing: 0%;
-        text-decoration: underline;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 24px;
-    }
+
 
 
 }
