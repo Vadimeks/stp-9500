@@ -24,10 +24,11 @@
 .mobile-menu-close-btn {
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 20px;
   width: 24px;
   height: 24px;
   background-color: transparent;
+  border: none;
 }
 
 .close-mobile-menu-icon {

@@ -7,6 +7,11 @@
   margin-bottom: 16px;
 }
 
+.game-wrapper {
+  scroll-margin-top: 54px;
+  overflow: clip;
+}
+
 .game-tags {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -145,7 +150,6 @@
     bottom: 102px;
     width: 540px;
     scroll-margin-top: 34px;
-    overflow: clip;
   }
 
   .game-description-title {

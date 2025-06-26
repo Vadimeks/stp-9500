@@ -4,7 +4,6 @@
   top: 0;
   background-color: transparent;
   height: 50px;
-  margin-top: 8px;
   margin-bottom: 16px;
 }
 
@@ -12,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(72, 203, 243, 0.5);
 }
 
 .logo {
