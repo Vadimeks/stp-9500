@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(72, 203, 243, 0.5);
+  background-color: rgba(230, 246, 251, 0.7);
 }
 
 .logo {
@@ -27,6 +27,7 @@
 .mobile-menu-toggle-btn {
   border: none;
   background-color: transparent;
+  padding-right: 0;
 }
 
 @media screen and (min-width: 1200px) {
