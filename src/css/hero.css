@@ -88,7 +88,7 @@
   height: 20px;
   background-color: #FFEE26;
   border-radius: 10px;
-  box-shadow: -8px 0px 20.3px 0px rgba(246, 177, 195, 0.9),1px 1px 4px 0px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: -8px 0px 20.3px 0px rgba(246, 177, 195, 0.9), 1px 1px 4px 0px rgba(0, 0, 0, 0.2) inset;
   vertical-align: middle;
   margin-right: 8px;
 }
@@ -135,7 +135,7 @@
 
   .hero-image-1 {
     top: 6px;
-    right: 20px;
+    right: 40px;
     width: 426px;
   }
 
@@ -146,7 +146,7 @@
 
   .game-wrapper {
     position: absolute;
-    right: 8px;
+    right: 35px;
     bottom: 102px;
     width: 540px;
     scroll-margin-top: 34px;
@@ -158,11 +158,11 @@
     line-height: 1.2;
   }
 
-  .game-description  {
+  .game-description {
     margin-bottom: 16px;
   }
 
-  .gameplay-info-wrapper { 
+  .gameplay-info-wrapper {
     border: 2px solid #FDEDED;
     box-shadow: none;
   }
