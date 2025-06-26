@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 75%;
+  width: calc((100% - 320px) / 2 + 240px);
   height: 100%;
   background-color: #FFF79B;
   padding: 24px 16px;
