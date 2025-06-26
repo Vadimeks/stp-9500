@@ -129,6 +129,7 @@
   height: 13px;  
   margin: 0 auto;
   margin-bottom: 11px;
+  cursor: default;
 }
 
 .rst-list-subtitle {
