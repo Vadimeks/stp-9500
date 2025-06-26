@@ -1,8 +1,8 @@
 .benifts-section {
     padding-top: 12px;
     padding-bottom: 12px;
-    scroll-margin-top: 54px;
-    overflow: hidden;
+    scroll-margin-top: 44px;
+    overflow: clip;
 }
 
 .rst-title {
@@ -146,6 +146,7 @@
     .benifts-section {
         padding-top: 40px;
         padding-bottom: 40px;
+        scroll-margin-top: 16px;
     }
 
     .rst-title {
