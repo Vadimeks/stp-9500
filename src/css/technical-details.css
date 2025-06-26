@@ -54,10 +54,18 @@
 
 @media screen and (min-width: 1200px) {
     .technical-details {
-        padding: 40px 0;
+        padding: 17px 0 155px 0;
     }
 
     .technical-details-container {
         max-width: 1200px;
+        padding: 0 128px;
+    }
+
+    .details-list {
+        width: 945px;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
     }
 }

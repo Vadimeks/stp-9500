@@ -37,6 +37,11 @@
     border-radius: 12px;
 }
 
+.watch-gameplay-link {
+    width: 180px;
+    height: 52px;
+}
+
 @media screen and (min-width: 1200px) {
     .watch-gameplay-title {
         height: 104px;
@@ -46,4 +51,6 @@
 
         max-width: 1200px;
     }
+
+
 }
