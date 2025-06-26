@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cookiesWindow = document.querySelector('.cookies-window');
+  const cookiesWindow = document.querySelector('[data-cookies-window]');
   const acceptButton = document.getElementById('acceptCookies');
   const declineButton = document.getElementById('declineCookies');
 
