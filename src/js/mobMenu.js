@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector('[data-action="toggle-burger"]');
   const mobileMenu = document.querySelector('[data-mobile-menu]');
-  const closeBtn = document.querySelector('.mobile-menu-close-btn');
+  const closeBtn = document.querySelector('[data-action="close-menu"]');
   const menuLinks = document.querySelectorAll('[data-action="close-menu"]');
 
   const openMenu = () => {
