@@ -1,0 +1,283 @@
+.benifts-section {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    scroll-margin-top: 54px;
+    overflow: hidden;
+}
+
+.rst-title {
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.3;
+    color: #1F2A62;
+    text-align: center;
+    margin-bottom: 8px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rst-swiper-btn-next.swiper-button-next,
+.rst-swiper-btn-prev.swiper-button-prev {
+    content: none !important;
+}
+
+.rst-swiper-btn-next.swiper-button-next,
+.rst-swiper-btn-prev.swiper-button-prev {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.rst-swiper.swiper.mySwiper.swiper-initialized {
+    padding: 0 !important;
+    width: 288px !important;
+}
+
+.swiper-slide-active {
+    max-width: 288px;
+}
+
+.rst-swiper.swiper {
+    width: 288px;
+    height: 193px;
+}
+
+.rst-list.swiper-wrapper {
+    align-items: center;
+    display: flex;
+}
+
+.swiper-navigation {
+    display: none;
+}
+
+.rst-list-item.swiper-slide {
+    background-color: #FFFFFF;
+    box-shadow: 1.5px 3.75px 3px 0px rgba(0, 0, 0, 0.25) inset;
+    width: 72px !important;
+    height: 108px !important;
+    border-radius: 3px;
+    flex-shrink: 0;
+    padding: 4px 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rst-list-image {
+    width: 68px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.rst-list-button {
+    display: block;
+    border: none;
+    background-color: #FBBC04;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 0.66;
+    border-radius: 3px;
+    width: 66px;
+    height: 13px;
+    margin: 0 auto;
+    margin-bottom: 11px;
+}
+
+.rst-list-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 auto;
+    text-align: center;
+    width: 62px;
+}
+
+.rst-list-item.swiper-slide.swiper-slide-active {
+    width: 124px !important;
+    height: 193px !important;
+    padding: 8px 5px;
+    border-radius: 5px;
+    max-width: 124px !important;
+    /* border: 1px solid black; */
+}
+
+.rst-list-item.swiper-slide.swiper-slide-active .rst-list-image {
+    width: 114px;
+    height: 108px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.rst-list-item.swiper-slide.swiper-slide-active .rst-list-button {
+    font-size: 10.5px;
+    line-height: 0.66;
+    width: 112px;
+    height: 24px;
+    margin-bottom: 8px;
+    padding-inline-end: 0 !important;
+    padding-inline-start: 0 !important;
+}
+
+.rst-list-item.swiper-slide.swiper-slide-active .rst-list-subtitle {
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 2;
+    width: 114px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .benifts-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .rst-title {
+        margin-bottom: 16px;
+        height: auto;
+    }
+
+    .rst-list.swiper-wrapper {
+        align-items: flex-start;
+    }
+
+    .swiper-rst-main {
+        width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .rst-swiper.swiper,
+    .rst-swiper.swiper.mySwiper.swiper-initialized {
+        width: 1030px !important;
+        height: 446px;
+        padding: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rst-list-item.swiper-slide {
+        border: 1px solid #FBBC04;
+        box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        width: 260px !important;
+        height: 391px !important;
+        border-radius: 15px;
+        padding: 10px 8px;
+    }
+
+    .rst-list-image {
+        border-radius: 15px;
+        width: 244px;
+        height: 248px;
+        margin-bottom: 8px;
+        object-fit: cover;
+        /* Ці contain, у залежнасці ад жадання. Выбрана cover, як было ў апошняй версіі. */
+        object-position: top;
+    }
+
+    .rst-list-button {
+        width: 244px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 1.5;
+        border-radius: 15px;
+        margin-bottom: 8px;
+    }
+
+    .rst-list-subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .rst-list-item.swiper-slide.swiper-slide-active {
+        width: 486px !important;
+        height: 446px !important;
+        max-width: 486px !important;
+        padding: 10px 8px;
+        justify-content: flex-start;
+        border-radius: 12px;
+        border: 1px solid black;
+    }
+
+    .rst-list-item.swiper-slide.swiper-slide-active .rst-list-image {
+        width: 470px;
+        height: 248px;
+        margin-bottom: 16px;
+        object-fit: cover;
+        /* Ці contain, у залежнасці ад жадання. Выбрана cover, як было ў апошняй версіі. */
+        object-position: top;
+        border: none;
+    }
+
+    .rst-list-item.swiper-slide.swiper-slide-active .rst-list-button {
+        font-size: 24px;
+        line-height: 1.5;
+        width: 300px;
+        height: 56px;
+        margin-bottom: 16px;
+    }
+
+    .rst-list-item.swiper-slide.swiper-slide-active .rst-list-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .rst-swiper-btn-prev.swiper-button-prev,
+    .rst-swiper-btn-next.swiper-button-next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35px;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .rst-swiper-btn-prev.swiper-button-prev {
+        left: 0;
+        right: auto;
+    }
+
+    .rst-swiper-btn-next.swiper-button-next {
+        right: 0;
+        left: auto;
+    }
+
+    .rst-move-icon {
+        fill: #0E0D0D;
+        width: 35px;
+        height: 35px;
+    }
+
+    .swiper-navigation {
+        display: none;
+    }
+}
