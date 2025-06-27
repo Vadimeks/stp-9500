@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 240px;
+  width: calc((100% - 320px) / 2 + 240px);
   height: 100%;
   background-color: #FFF79B;
   padding: 24px 16px;
@@ -49,4 +49,21 @@
 
 .mobile-home-item {
   font-weight: 500;
+}
+
+.mobile-span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+    pointer-events: all;
+  }
+
+  body[data-menu='open'] {
+    overflow: scroll; 
+  }
 }
