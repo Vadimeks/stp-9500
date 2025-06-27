@@ -80,12 +80,14 @@
         display: block;
         width: 278px;
         height: 367px;
+
     }
 
     .designed-for-image-two {
         display: block;
         width: 269px;
         height: 367px;
+
     }
 
     .designed-for-content {
@@ -94,7 +96,7 @@
     }
 
     .designed-for-header {
-        line-height: 36px;
+        line-height: 48px;
         margin-bottom: 24px;
     }
 
