@@ -28,22 +28,34 @@ h2 {
 }
 
 button {
-    animation: pulse 2s infinite alternate;
+    animation: pulse-btn 2s infinite alternate;
 }
 
 a img {
-    animation: pulse 4s infinite alternate;
+    animation: pulse-btn 3s infinite alternate;
 }
 
-@keyframes pulse {
+@keyframes pulse-btn {
     0% {
-        opacity: 0.7;
+        opacity: 1;
         transform: scale(0.98);
     }
 
     100% {
         opacity: 1;
-        transform: scale(1.02);
+        transform: scale(1.03);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.9;
+        transform: scale(0.96);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.06);
     }
 }
 

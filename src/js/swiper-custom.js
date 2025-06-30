@@ -19,7 +19,6 @@ export function initializeSwiper(
   const swiperContainer = document.querySelector(`[data-swiper="${selector}"]`);
 
   if (!swiperContainer) {
-    console.warn(`Swiper container with data-swiper="${selector}" not found.`);
     return null;
   }
 
@@ -35,9 +34,7 @@ export function initializeSwiper(
     slidesPerView: 1,
     spaceBetween: 0,
     loop: false,
-
     navigation: {},
-
     breakpoints: {
       0: {
         enabled: true,
@@ -45,12 +42,15 @@ export function initializeSwiper(
         spaceBetween: 35,
         loop: true,
         centeredSlides: true,
+        centeredSlidesBounds: true,
       },
       1200: {
         enabled: false,
         slidesPerView: 2,
         spaceBetween: 152,
         loop: false,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
       },
     },
   };

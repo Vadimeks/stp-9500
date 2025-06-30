@@ -59,7 +59,7 @@
 
 .join-our-community-cards-item img {
     border-radius: 6px;
-    animation: image-pulse 1.5s infinite alternate;
+    /* animation: image-pulse 1.5s infinite alternate; */
 }
 
 .player-info-list {
