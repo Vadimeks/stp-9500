@@ -6,7 +6,6 @@
 }
 
 .swiper-rst-main {
-    max-width: 288px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -25,10 +24,7 @@
 
 .rst-swiper.swiper,
 .rst-swiper.swiper.mySwiper.swiper-initialized {
-    width: 288px !important;
-    margin-right: auto;
-    height: 210px;
-    overflow: hidden;
+    height: 188px;
 }
 
 .swiper-wrapper {
@@ -63,8 +59,6 @@
 .rst-list-image {
     width: 68px;
     height: 55px;
-    object-position: cover;
-    /* object-fit: contain; */
     transition: all 0.3s ease;
     margin-bottom: 8px;
 }
@@ -123,7 +117,7 @@
         width: 1030px !important;
         margin-left: auto;
         margin-right: auto;
-        height: 740px;
+        height: 672px;
         overflow: hidden;
         padding: 0 !important;
     }
@@ -131,7 +125,7 @@
 
     .rst-list-item.swiper-slide {
         width: 260px !important;
-        height: auto;
+        height: 391px !important;
         min-width: 260px;
         border: 1px solid #FBBC04;
         box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -140,17 +134,20 @@
     }
 
     .rst-list-item.swiper-slide.swiper-slide-active {
-        transform: scale(1.87);
-        height: 390px;
+        transform: scale(1.72);
     }
+
+    .rst-list-item.swiper-slide.swiper-slide-active .rst-list-image {
+        border: 1px solid #000 !important;
+    }
+
 
     .rst-list-image {
         border-radius: 16px;
         width: 244px;
-        height: 248px;
+        height: 242px;
         margin-bottom: 8px;
-        object-fit: cover;
-        border-bottom: 1px solid #000 !important;
+        width: 100%;
 
     }
 
