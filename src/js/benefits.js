@@ -1,42 +1,31 @@
 import { initializeSwiper } from './swiper-custom.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const rstSwiper = initializeSwiper(
+  initializeSwiper(
     'rst-swiper',
     {
       grabCursor: true,
-
       observer: true,
       observeParents: true,
       observeSlideChildren: true,
-
-      on: {
-        init: function () {
-          this.update();
-        },
-
-        slideChangeTransitionEnd: function () {
-          this.update();
-        },
-
-        transitionEnd: function () {
-          this.update();
-        },
-      },
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
 
       breakpoints: {
         0: {
           enabled: true,
           slidesPerView: 'auto',
           centeredSlides: true,
-          spaceBetween: 10,
+          centeredSlidesBounds: true,
+          spaceBetween: 30,
           loop: true,
         },
         1200: {
           enabled: true,
-          spaceBetween: 12,
           slidesPerView: 'auto',
           centeredSlides: true,
+          centeredSlidesBounds: true,
+          spaceBetween: 120,
           loop: true,
         },
       },
